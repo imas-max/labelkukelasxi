@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f6f2ff">
+<title>LabelKu — Media Interaktif Desain Label Kemasan</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+:root{--ink:#28243d;--muted:#77748d;--purple:#7357d8;--purple2:#9279ed;--pink:#ff8fb1;--yellow:#ffd66b;--mint:#9ce5cf;--paper:#fff;--bg:#f7f5fc;--line:#ece8f5;--shadow:0 16px 45px #51418a16}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}.hidden{display:none!important}.app{min-height:100vh}.topbar{height:74px;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(5vw,22px);position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:10px;font-family:'Plus Jakarta Sans';font-weight:800;font-size:21px}.brandmark{width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,var(--purple),#b49cfb);display:grid;place-items:center;color:white;font-size:20px}.nav{display:flex;gap:7px;align-items:center}.nav button{background:transparent;color:var(--muted);padding:10px 14px;border-radius:12px;font-weight:700}.nav button.active,.nav button:hover{background:#f0ebff;color:var(--purple)}.sound{border:1px solid var(--line)!important;background:white!important}.container{max-width:1120px;margin:auto;padding:36px 24px 70px}.page{animation:fade .35s ease}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;padding:38px 0 28px}.eyebrow{display:inline-flex;gap:8px;align-items:center;background:#efeaff;color:var(--purple);border-radius:99px;padding:8px 13px;font-size:12px;font-weight:800;letter-spacing:.04em}.hero h1{font:800 clamp(38px,5vw,62px)/1.08 'Plus Jakarta Sans';letter-spacing:-2px;margin:20px 0 15px}.gradient{background:linear-gradient(90deg,var(--purple),#e36b9b);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:17px;color:var(--muted);line-height:1.75;max-width:530px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{padding:13px 19px;border-radius:14px;font-weight:800;transition:.2s;display:inline-flex;align-items:center;gap:8px}.btn:hover{transform:translateY(-2px);box-shadow:0 9px 20px #6e55c52b}.primary{background:var(--purple);color:#fff}.secondary{background:#fff;color:var(--purple);border:1px solid #e6defd}.soft{background:#f2effb;color:var(--purple)}.illustration{min-height:330px;border-radius:30px;background:linear-gradient(145deg,#e9e2ff,#fff0f4);position:relative;display:grid;place-items:center;overflow:hidden}.blob{position:absolute;border-radius:50%;background:#ffffff70}.blob.one{width:220px;height:220px;top:-70px;right:-40px}.blob.two{width:180px;height:180px;bottom:-75px;left:-45px}.pack{position:relative;width:145px;height:195px;border-radius:24px 24px 30px 30px;background:linear-gradient(145deg,#ffca78,#f28c72);box-shadow:0 20px 35px #a56b7240;transform:rotate(-7deg);display:flex;align-items:center;justify-content:center;flex-direction:column;color:#603c48;border:5px solid #ffffff90}.pack:before{content:'';position:absolute;top:-14px;width:90px;height:16px;border-radius:8px;background:#f4aa73}.pack .sticker{background:#fff8e9;border-radius:14px;padding:13px 10px;text-align:center;width:85%;font-weight:800}.pack small{font-size:9px;display:block;margin-top:5px}.pack2{position:absolute;width:112px;height:145px;background:linear-gradient(145deg,#9ee6d2,#5abca8);border:5px solid #ffffff90;border-radius:18px;right:14%;bottom:38px;transform:rotate(9deg);box-shadow:0 16px 28px #568f8740;display:grid;place-items:center;color:#205d55;font-size:36px}.spark{position:absolute;font-size:30px}.s1{top:45px;left:18%}.s2{right:13%;top:52px}.s3{left:17%;bottom:55px}.section-title{font:800 27px 'Plus Jakarta Sans';margin:0 0 8px}.muted{color:var(--muted)}.card{background:white;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.mini-card{background:white;border:1px solid var(--line);border-radius:18px;padding:20px}.mini-card .emoji{font-size:28px}.mini-card h3{margin:12px 0 6px}.mini-card p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:8px;margin-bottom:15px}.field label{font-weight:800;font-size:13px}.field input,.field select,.field textarea{width:100%;border:1px solid #e5e0ef;border-radius:12px;padding:13px 14px;outline:none;background:#fff;color:var(--ink)}.field textarea{min-height:90px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--purple);box-shadow:0 0 0 3px #7357d81a}.notice{background:#fff8e6;border:1px solid #f8e6ad;padding:13px 16px;border-radius:13px;color:#795c19;font-size:13px;line-height:1.55}.steps{display:flex;gap:10px;margin:22px 0}.step{flex:1;padding:12px;border-radius:13px;background:#f0edf7;color:#918da4;font-size:13px;font-weight:800;text-align:center}.step.active{background:#eee9ff;color:var(--purple)}.step.done{background:#e4f8f0;color:#21886c}.progress-wrap{background:#efedf4;height:9px;border-radius:99px;overflow:hidden}.progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--purple),var(--pink));border-radius:99px;transition:.4s}.activity-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}.activity{border:1px solid var(--line);background:white;border-radius:18px;padding:18px;display:flex;gap:14px;align-items:center;text-align:left;color:var(--ink);transition:.2s}.activity:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#d7cbff}.activity .letter{width:43px;height:43px;border-radius:14px;background:#f0ebff;color:var(--purple);display:grid;place-items:center;font-weight:900;font-size:18px;flex-shrink:0}.activity small{display:block;color:var(--muted);margin-top:4px}.status{margin-left:auto;color:#a19caf;font-size:12px;font-weight:800}.status.done{color:#1a9b72}.content-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:20px}.label-demo{background:linear-gradient(145deg,#fff2dc,#ffe5ed);border-radius:20px;padding:24px;display:grid;place-items:center;min-height:340px}.sample-label{width:210px;min-height:260px;border-radius:20px;background:#fffdf5;box-shadow:0 15px 30px #9a77532b;padding:17px;text-align:center;position:relative;border:2px solid #e8c98d}.sample-label h3{font:800 25px 'Plus Jakarta Sans';margin:10px 0;color:#9d4d39}.sample-label .fruit{font-size:50px}.sample-label p{font-size:11px;line-height:1.45;margin:7px 0}.sample-label .tiny{font-size:9px;color:#766b5b}.hotspot{position:absolute;width:25px;height:25px;border-radius:50%;background:var(--purple);color:white;font-weight:900;display:grid;place-items:center;border:3px solid white;box-shadow:0 4px 10px #46348a40}.hotspot:nth-child(1){top:28px;right:-10px}.hotspot:nth-child(2){top:120px;left:-10px}.hotspot:nth-child(3){bottom:25px;right:-10px}.info-list{display:grid;gap:9px}.info-item{padding:13px 14px;border:1px solid var(--line);border-radius:13px;background:#fff;text-align:left}.info-item strong{display:block;font-size:14px}.info-item span{color:var(--muted);font-size:13px;line-height:1.5}.question{border:1px solid var(--line);padding:17px;border-radius:15px;margin:12px 0}.question h4{margin:0 0 12px}.choice{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:11px;margin:7px 0;cursor:pointer;font-size:14px}.choice input{margin-right:8px;accent-color:var(--purple)}.feedback{font-size:13px;font-weight:700;margin-top:10px}.good{color:#18845f}.bad{color:#c65b5b}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.tabs button{padding:10px 14px;border-radius:12px;background:#f0edf7;color:#77718d;font-weight:800}.tabs button.active{background:var(--purple);color:white}.report-head{display:flex;justify-content:space-between;align-items:center;gap:15px}.report-table{width:100%;border-collapse:collapse;margin:15px 0}.report-table td,.report-table th{padding:11px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}.report-table th{color:var(--muted);width:34%}.tag{display:inline-block;background:#eaf8f3;color:#21866a;padding:6px 10px;border-radius:99px;font-size:12px;font-weight:800}.footer{text-align:center;color:#aaa5b7;font-size:12px;padding:25px}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#28243d;color:white;padding:12px 18px;border-radius:12px;box-shadow:var(--shadow);z-index:30;font-size:14px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}.hint{font-size:13px;color:var(--muted);line-height:1.6}.divider{height:1px;background:var(--line);margin:18px 0}
+@media(max-width:760px){.topbar{height:auto;min-height:68px;flex-wrap:wrap;padding:12px 18px}.nav{order:3;width:100%;overflow:auto}.nav button{white-space:nowrap;padding:9px}.hero,.content-grid,.formgrid,.grid3,.two-col{grid-template-columns:1fr}.hero{padding-top:20px}.illustration{min-height:260px}.activity-list{grid-template-columns:1fr}.container{padding:24px 16px 50px}.report-head{align-items:flex-start;flex-direction:column}}
+@media print{.topbar,.no-print,.footer{display:none!important}body{background:white}.container{max-width:100%;padding:0}.card{box-shadow:none;border:0}.page{display:none!important}#reportPage{display:block!important}.report-head{margin-bottom:20px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div class="brand"><div class="brandmark">L</div> LabelKu</div>
+  <nav class="nav">
+    <button id="navHome" class="active" onclick="go('home')">Laman Muka</button>
+    <button id="navGuide" onclick="go('guide')">Panduan</button>
+    <button id="navMap" onclick="go('map')">Aktivitas</button>
+    <button class="sound" onclick="toggleSound()" id="soundBtn">🔊 Suara: Mati</button>
+  </nav>
+</header>
+<main class="container">
+<section id="homePage" class="page">
+  <div class="hero">
+    <div>
+      <span class="eyebrow">✦ MEDIA INTERAKTIF · DESAIN LABEL KEMASAN</span>
+      <h1>Rancang Label<br><span class="gradient">Produkmu!</span></h1>
+      <p class="lead">Kenali informasi produk, pilih elemen visual, dan buat label yang menarik serta mudah dibaca. Belajar melalui tiga langkah: <b>Amati · Kerjakan · Renungkan.</b></p>
+      <div class="actions"><button class="btn primary" onclick="go('identity')">Mulai Belajar <span>→</span></button><button class="btn secondary" onclick="go('guide')">Lihat Panduan</button></div>
+    </div>
+    <div class="illustration"><div class="blob one"></div><div class="blob two"></div><span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✿</span><div class="pack"><div class="sticker">LABEL<br>PRODUK<small>INFORMATIF & MENARIK</small></div></div><div class="pack2">🍃</div></div>
+  </div>
+  <div class="grid3">
+    <div class="mini-card"><div class="emoji">👀</div><h3>Amati</h3><p>Pelajari fungsi kemasan, elemen visual, dan informasi yang ada pada label produk.</p></div>
+    <div class="mini-card"><div class="emoji">✏️</div><h3>Kerjakan</h3><p>Analisis contoh label dan rancang label baru sesuai karakter produk dan target pasar.</p></div>
+    <div class="mini-card"><div class="emoji">💭</div><h3>Renungkan</h3><p>Refleksikan proses, tantangan, dan hal baru yang kamu pelajari.</p></div>
+  </div>
+</section>
+
+<section id="identityPage" class="page hidden">
+  <span class="eyebrow">LANGKAH AWAL</span><h2 class="section-title" style="margin-top:14px">Kenalan dulu, yuk! 👋</h2><p class="muted">Isi identitasmu agar tercantum pada laporan aktivitas belajar.</p>
+  <div class="formgrid">
+    <div class="card">
+      <div class="field"><label>Nama lengkap *</label><input id="studentName" placeholder="Tuliskan nama lengkap"></div>
+      <div class="field"><label>Kelas *</label><input id="studentClass" placeholder="Contoh: XII MPLB 1"></div>
+      <div class="field"><label>Nama kelompok (opsional)</label><input id="studentGroup" placeholder="Contoh: Kelompok Kreatif"></div>
+      <button class="btn primary" onclick="enterClass()">Masuk ke Pembelajaran →</button>
+      <p id="identityError" class="feedback bad"></p>
+    </div>
+    <div class="card" style="background:linear-gradient(145deg,#f0ebff,#fff)">
+      <div style="font-size:34px">🎯</div><h3>Tentang aktivitas</h3><p class="muted" style="line-height:1.7">Kamu akan mempelajari elemen label, mengamati contoh, menganalisis desain, membuat rancangan label, memvisualisasikannya pada mockup 3D, dan menuliskan refleksi.</p><div class="notice">Data yang kamu isi digunakan untuk menampilkan identitas pada laporan aktivitas belajar di perangkat ini.</div>
+    </div>
+  </div>
+</section>
+
+<section id="briefPage" class="page hidden">
+  <span class="eyebrow">BRIEFING DESAINER</span><h2 class="section-title" style="margin-top:14px">Tantangan hari ini: jadilah desainer label! 🎨</h2>
+  <div class="content-grid">
+    <div class="card"><div style="font-size:54px">👩🏻‍🏫</div><h3>Bu Imas · Guru PKK</h3><p class="muted" style="line-height:1.8">“Sebuah produk bisa memiliki kualitas baik, tetapi label yang kurang jelas dapat membuat konsumen ragu. Hari ini kamu bertugas menjadi desainer label produk.”</p><button class="btn primary" onclick="go('map')">Siap, lanjut! →</button></div>
+    <div class="card"><div class="label-demo"><div class="sample-label"><div class="fruit">🍓</div><h3>Berry Bliss</h3><p>Selai Stroberi Homemade</p><p>Komposisi: stroberi, gula, lemon</p><p>Berat bersih: 150 g</p><p class="tiny">Diproduksi oleh Dapur Kreatif · Bogor</p></div></div><p class="hint">Perhatikan bagaimana label membantu konsumen mengenali produk dan memperoleh informasi penting.</p></div>
+  </div>
+</section>
+
+<section id="guidePage" class="page hidden">
+  <span class="eyebrow">PANDUAN BELAJAR</span><h2 class="section-title" style="margin-top:14px">Tiga langkah untuk menghasilkan label yang baik</h2>
+  <div class="grid3" style="margin:20px 0">
+    <div class="mini-card"><div class="emoji">👀</div><h3>1. Amati contoh label</h3><p>Perhatikan nama produk, informasi, warna, tipografi, logo, gambar, dan tata letak.</p></div>
+    <div class="mini-card"><div class="emoji">📝</div><h3>2. Kerjakan aktivitas</h3><p>Analisis satu label produk, lalu buat konsep label baru dan visualisasikan desainnya.</p></div>
+    <div class="mini-card"><div class="emoji">💡</div><h3>3. Renungkan hasil</h3><p>Tuliskan hal baru yang dipelajari, tantangan, dan manfaat label bagi produk.</p></div>
+  </div>
+  <div class="card"><h3>Materi inti yang perlu kamu pahami</h3><div class="info-list">
+    <div class="info-item"><strong>Fungsi kemasan dan label</strong><span>Kemasan melindungi sekaligus mempromosikan produk. Label menjadi identitas dan media informasi produk.</span></div>
+    <div class="info-item"><strong>Elemen visual</strong><span>Warna, font/tipografi, logo, gambar/ilustrasi, dan tata letak.</span></div>
+    <div class="info-item"><strong>Informasi produk</strong><span>Nama produk, komposisi, berat/isi bersih, nama dan alamat produsen, tanggal/keterangan kedaluwarsa, serta tanggal/kode produksi.</span></div>
+  </div><div class="actions"><button class="btn primary" onclick="go('map')">Mulai Aktivitas →</button><button class="btn secondary" onclick="go('home')">Kembali</button></div></div>
+</section>
+
+<section id="mapPage" class="page hidden">
+  <span class="eyebrow">PETA AKTIVITAS</span><h2 class="section-title" style="margin-top:14px">Jelajahi perjalanan belajarmu</h2><p class="muted">Selesaikan aktivitas secara berurutan. Progres akan diperbarui setelah kamu menyimpan pekerjaan.</p>
+  <div class="card"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center"><b>Progres belajar</b><b id="progressText">0 dari 5 aktivitas</b></div><div class="progress-wrap" style="margin-top:12px"><div class="progress-bar" id="progressBar"></div></div></div>
+  <div class="activity-list">
+    <button class="activity" onclick="go('observe')"><div class="letter">A</div><div><b>Mengenal fungsi dan tujuan kemasan</b><small>Amati fungsi kemasan dan label</small></div><span class="status" id="st1">Belum</span></button>
+    <button class="activity" onclick="go('observe')"><div class="letter">B</div><div><b>Mengidentifikasi jenis kemasan & elemen label</b><small>Kenali unsur visual dan informasi</small></div><span class="status" id="st2">Belum</span></button>
+    <button class="activity" onclick="go('observe')"><div class="letter">C</div><div><b>Menganalisis contoh label produk</b><small>Amati contoh dan jawab pertanyaan</small></div><span class="status" id="st3">Belum</span></button>
+    <button class="activity" onclick="go('work')"><div class="letter">D</div><div><b>Merancang label kemasan</b><small>Tulis konsep label produkmu</small></div><span class="status" id="st4">Belum</span></button>
+    <button class="activity" onclick="go('work')"><div class="letter">E</div><div><b>Visualisasi desain pada mockup 3D</b><small>Canva dan Pacdora</small></div><span class="status" id="st5">Belum</span></button>
+  </div>
+</section>
+
+<section id="observePage" class="page hidden">
+  <div class="steps"><div class="step active">01 · AMATI</div><div class="step">02 · KERJAKAN</div><div class="step">03 · RENUNGKAN</div></div>
+  <h2 class="section-title">Amati contoh label produk 👀</h2><p class="muted">Klik penanda pada contoh label untuk mengenali bagian-bagiannya.</p>
+  <div class="content-grid">
+    <div class="label-demo"><div class="sample-label"><span class="hotspot" onclick="showElement(0)">1</span><span class="hotspot" onclick="showElement(1)">2</span><span class="hotspot" onclick="showElement(2)">3</span><div class="fruit">🍓</div><h3>Berry Bliss</h3><p>Selai Stroberi Homemade</p><p>Komposisi: stroberi, gula, lemon</p><p>Berat bersih: 150 g</p><p class="tiny">Diproduksi oleh Dapur Kreatif · Bogor</p><p class="tiny">Baik digunakan sebelum: 12/2027</p></div></div>
+    <div class="card"><h3 id="elementTitle">Pilih penanda pada label</h3><p id="elementDesc" class="muted">Setiap bagian label memiliki fungsi untuk membantu konsumen memahami produk.</p><div class="divider"></div><div class="info-list">
+      <div class="info-item"><strong>Nama produk</strong><span>Menunjukkan identitas atau nama produk.</span></div>
+      <div class="info-item"><strong>Komposisi dan berat bersih</strong><span>Memberi informasi bahan yang digunakan serta jumlah/isi produk.</span></div>
+      <div class="info-item"><strong>Produsen dan kedaluwarsa</strong><span>Memberi informasi pihak yang memproduksi serta batas/keterangan masa konsumsi.</span></div>
+    </div><div class="actions"><button class="btn primary" onclick="complete(0);go('work')">Lanjut: Kerjakan Soal →</button></div></div>
+  </div>
+  <div class="card" style="margin-top:18px"><h3>Latihan mini: kenali informasi label</h3><div class="question"><h4>Informasi yang menunjukkan jumlah isi produk adalah …</h4><label class="choice"><input type="radio" name="quiz1" value="a"> Nama produk</label><label class="choice"><input type="radio" name="quiz1" value="b"> Berat bersih</label><label class="choice"><input type="radio" name="quiz1" value="c"> Nama produsen</label><button class="btn soft" onclick="checkMini()">Periksa Jawaban</button><div id="miniFeedback" class="feedback"></div></div></div>
+</section>
+
+<section id="workPage" class="page hidden">
+  <div class="steps"><div class="step done">01 · AMATI</div><div class="step active">02 · KERJAKAN</div><div class="step">03 · RENUNGKAN</div></div>
+  <h2 class="section-title">Saatnya merancang labelmu! ✏️</h2><p class="muted">Lengkapi analisis dan konsep desain. Kamu bisa mengembangkan desain di Canva lalu memvisualisasikannya di Pacdora.</p>
+  <div class="card">
+    <h3>Bagian A — Analisis label produk</h3>
+    <div class="formgrid">
+      <div class="field"><label>Nama produk yang diamati</label><input id="aProduct" placeholder="Contoh: Keripik Pisang"></div>
+      <div class="field"><label>Target pasar produk</label><input id="aTarget" placeholder="Contoh: Remaja dan keluarga"></div>
+      <div class="field"><label>Warna yang digunakan</label><input id="aColor" placeholder="Contoh: Kuning dan cokelat"></div>
+      <div class="field"><label>Jenis font/tipografi</label><input id="aFont" placeholder="Contoh: Tebal, mudah dibaca"></div>
+      <div class="field"><label>Ilustrasi/logo pada label</label><input id="aVisual" placeholder="Jelaskan gambar atau logo"></div>
+      <div class="field"><label>Informasi produk yang dicantumkan</label><input id="aInfo" placeholder="Nama, komposisi, berat, produsen, dll."></div>
+    </div>
+    <div class="field"><label>Kelebihan label</label><textarea id="aPlus" placeholder="Apa yang sudah menarik atau informatif?"></textarea></div>
+    <div class="field"><label>Kekurangan label</label><textarea id="aMinus" placeholder="Apa yang masih perlu diperbaiki?"></textarea></div>
+    <div class="divider"></div><h3>Bagian B — Rancangan label baru</h3>
+    <div class="formgrid">
+      <div class="field"><label>Nama produk rancanganmu</label><input id="dProduct" placeholder="Nama produk"></div>
+      <div class="field"><label>Target pasar</label><input id="dTarget" placeholder="Siapa calon konsumennya?"></div>
+      <div class="field"><label>Pesan/karakter merek</label><input id="dMessage" placeholder="Contoh: sehat, ceria, premium"></div>
+      <div class="field"><label>Warna utama</label><input id="dColor" placeholder="Warna dan alasannya"></div>
+      <div class="field"><label>Font yang dipilih</label><input id="dFont" placeholder="Jenis font dan alasannya"></div>
+      <div class="field"><label>Logo/ilustrasi</label><input id="dLogo" placeholder="Gambaran logo atau ilustrasi"></div>
+    </div>
+    <div class="field"><label>Rencana tata letak dan informasi label</label><textarea id="dLayout" placeholder="Jelaskan susunan elemen dan informasi yang akan dicantumkan"></textarea></div>
+    <div class="divider"></div><h3>Bagian C — Produk akhir</h3>
+    <p class="hint">Buat desain label menggunakan Canva, kemudian impor desain ke Pacdora untuk visualisasi pada kemasan 3D. Tempelkan tautan hasil karyamu di bawah ini.</p>
+    <div class="two-col">
+      <div class="field"><label>Tautan desain Canva</label><input id="canvaLink" placeholder="https://www.canva.com/..."></div>
+      <div class="field"><label>Tautan mockup 3D Pacdora</label><input id="pacdoraLink" placeholder="https://www.pacdora.com/..."></div>
+    </div>
+    <div class="field"><label>Catatan karya / unggah file (opsional)</label><input id="designNote" placeholder="Nama file atau keterangan hasil desain"></div>
+    <div class="notice">Pastikan nama produk, informasi, warna, tipografi, ilustrasi, dan tata letak sesuai dengan karakter produk serta target pasarnya.</div>
+    <div class="actions"><button class="btn soft" onclick="showHint()">Buka Petunjuk</button><button class="btn secondary" onclick="showExample()">Lihat Contoh</button><button class="btn primary" onclick="checkWork()">Periksa Kelengkapan</button></div>
+    <p id="workFeedback" class="feedback"></p>
+    <div class="actions"><button class="btn primary" id="toReflect" onclick="completeWork()" disabled>Lanjut: Renungkan →</button></div>
+  </div>
+</section>
+
+<section id="reflectPage" class="page hidden">
+  <div class="steps"><div class="step done">01 · AMATI</div><div class="step done">02 · KERJAKAN</div><div class="step active">03 · RENUNGKAN</div></div>
+  <h2 class="section-title">Renungkan proses belajarmu 💭</h2><p class="muted">Tidak ada jawaban benar atau salah. Ceritakan alasan dan pengalamanmu selama merancang label.</p>
+  <div class="card">
+    <div class="field"><label>1. Mengapa kamu memilih warna utama tersebut?</label><textarea id="r1" placeholder="Tuliskan alasanmu..."></textarea></div>
+    <div class="field"><label>2. Font apa yang digunakan dan mengapa sesuai dengan karakter produk?</label><textarea id="r2" placeholder="Tuliskan alasanmu..."></textarea></div>
+    <div class="field"><label>3. Elemen kreatif apa yang membuat label berbeda dari produk sejenis?</label><textarea id="r3" placeholder="Tuliskan ide kreatifmu..."></textarea></div>
+    <div class="field"><label>4. Informasi apa yang harus dipastikan mudah dibaca konsumen?</label><textarea id="r4" placeholder="Tuliskan jawabanmu..."></textarea></div>
+    <div class="field"><label>Catatan belajarku — hal baru, tantangan, dan manfaat yang dipelajari</label><textarea id="rNote" placeholder="Hari ini saya belajar bahwa..."></textarea></div>
+    <button class="btn primary" onclick="saveReflection()">Simpan Refleksi ✓</button><p id="reflectFeedback" class="feedback"></p>
+  </div>
+</section>
+
+<section id="reportPage" class="page hidden">
+  <div class="report-head"><div><span class="eyebrow">HASIL PEMBELAJARAN</span><h2 class="section-title" style="margin-top:12px">Laporan Belajar Desain Label Kemasan</h2><p class="muted">Ringkasan aktivitas dan karya yang telah kamu kerjakan.</p></div><span class="tag" id="reportStatus">Dalam proses</span></div>
+  <div class="card">
+    <h3>Identitas Peserta Didik</h3><table class="report-table"><tr><th>Nama</th><td id="repName">-</td></tr><tr><th>Kelas</th><td id="repClass">-</td></tr><tr><th>Kelompok</th><td id="repGroup">-</td></tr><tr><th>Tanggal</th><td id="repDate">-</td></tr></table>
+    <h3>Rekap Aktivitas</h3><table class="report-table"><tr><th>Aktivitas selesai</th><td id="repProgress">0 dari 5</td></tr><tr><th>Hasil analisis</th><td id="repAnalysis">Belum diisi</td></tr><tr><th>Konsep desain</th><td id="repDesign">Belum diisi</td></tr><tr><th>Refleksi</th><td id="repReflection">Belum diisi</td></tr></table>
+    <h3>Karya yang Dihasilkan</h3><p id="repWork" class="muted">Tautan karya belum ditambahkan.</p>
+    <h3>Kemampuan di Dunia Kerja</h3><p class="muted" style="line-height:1.7">Melalui aktivitas ini kamu berlatih mengamati kebutuhan konsumen, berpikir kreatif, menyusun informasi, bekerja sama, dan mempresentasikan ide desain.</p>
+    <div class="divider"></div><h3>Evaluasi diri</h3>
+    <div class="field"><label>Seberapa paham kamu tentang desain label kemasan?</label><select id="selfLevel"><option value="">Pilih skala 1–4</option><option>1 — Perlu bimbingan</option><option>2 — Mulai memahami</option><option>3 — Memahami</option><option>4 — Sangat memahami</option></select></div>
+    <div class="field"><label>Bagian paling menantang</label><input id="challenge" placeholder="Tuliskan bagian yang paling menantang"></div>
+    <div class="field"><label>Rencana penerapan kemampuan</label><textarea id="nextPlan" placeholder="Kemampuan ini akan saya gunakan untuk..."></textarea></div>
+    <div class="actions no-print"><button class="btn primary" onclick="window.print()">🖨 Cetak Ringkasan</button><button class="btn secondary" onclick="restart()">↻ Ulangi dari Awal</button><button class="btn soft" onclick="go('home')">Laman Muka</button></div>
+  </div>
+</section>
+</main>
+<footer class="footer">LabelKu · Media Interaktif Pembelajaran Projek Kreatif dan Kewirausahaan</footer>
+<div id="toast" class="toast hidden"></div>
+</div>
+<script>
+const pages=['home','identity','brief','guide','map','observe','work','reflect','report'];
+let student={name:'',cls:'',group:''},done=[false,false,false,false,false],sound=false;
+function go(p){pages.forEach(x=>document.getElementById(x+'Page').classList.toggle('hidden',x!==p));document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));let n={home:'navHome',guide:'navGuide',map:'navMap'}[p];if(n)document.getElementById(n).classList.add('active');if(p==='brief'&&!sessionStorage.getItem('briefSeen'))sessionStorage.setItem('briefSeen','1');if(p==='report')renderReport();window.scrollTo({top:0,behavior:'smooth'});}
+function toast(t){let el=document.getElementById('toast');el.textContent=t;el.classList.remove('hidden');setTimeout(()=>el.classList.add('hidden'),2300)}
+function enterClass(){let name=document.getElementById('studentName').value.trim(),cls=document.getElementById('studentClass').value.trim();if(!name||!cls){document.getElementById('identityError').textContent='Lengkapi nama dan kelas terlebih dahulu.';return}student={name,cls,group:document.getElementById('studentGroup').value.trim()};document.getElementById('identityError').textContent='';go('brief');say('Selamat datang, '+name+'. Mari mulai belajar desain label kemasan.')}
+function updateProgress(){let count=done.filter(Boolean).length;document.getElementById('progressText').textContent=count+' dari 5 aktivitas';document.getElementById('progressBar').style.width=(count/5*100)+'%';done.forEach((v,i)=>{let e=document.getElementById('st'+(i+1));e.textContent=v?'✓ Tuntas':'Belum';e.className='status'+(v?' done':'')})}
+function complete(i){done[i]=true;updateProgress()}
+function showElement(i){let data=[['Nama produk','Berry Bliss adalah nama produk. Nama produk perlu terlihat jelas agar konsumen mudah mengenalinya.'],['Komposisi dan berat bersih','Komposisi menjelaskan bahan yang digunakan. Berat bersih menunjukkan jumlah isi produk.'],['Produsen dan kedaluwarsa','Informasi produsen membantu mengenali pihak pembuat. Keterangan kedaluwarsa memberi informasi masa konsumsi.']];document.getElementById('elementTitle').textContent=data[i][0];document.getElementById('elementDesc').textContent=data[i][1];say(data[i][0]+'. '+data[i][1])}
+function checkMini(){let v=document.querySelector('input[name="quiz1"]:checked'),f=document.getElementById('miniFeedback');if(!v){f.textContent='Pilih salah satu jawaban terlebih dahulu.';f.className='feedback bad';return}if(v.value==='b'){f.textContent='Benar! Berat bersih menunjukkan jumlah isi produk.';f.className='feedback good';complete(1);complete(2);say('Bagus! Jawabanmu benar.')}else{f.textContent='Belum tepat. Coba perhatikan informasi yang menunjukkan jumlah isi produk.';f.className='feedback bad'}}
+function val(id){return document.getElementById(id).value.trim()}
+function checkWork(){let ids=['aProduct','aTarget','aColor','aFont','aVisual','aInfo','aPlus','aMinus','dProduct','dTarget','dMessage','dColor','dFont','dLogo','dLayout'];let missing=ids.filter(x=>!val(x));let f=document.getElementById('workFeedback');if(missing.length){f.textContent='Masih ada '+missing.length+' bagian yang perlu dilengkapi pada analisis dan rancangan.';f.className='feedback bad';document.getElementById('toReflect').disabled=true;return}f.textContent='Bagus! Analisis dan konsep desain sudah terisi lengkap. Kamu dapat melanjutkan ke refleksi.';f.className='feedback good';document.getElementById('toReflect').disabled=false;complete(3);if(val('canvaLink')||val('pacdoraLink'))complete(4);say('Pemeriksaan selesai. Isianmu sudah lengkap.')}
+function completeWork(){complete(3);if(val('canvaLink')||val('pacdoraLink'))complete(4);go('reflect')}
+function showHint(){toast('Isi analisis berdasarkan label yang kamu amati. Rancang label sesuai target pasar, lalu pastikan informasi penting mudah dibaca.')}
+function showExample(){toast('Contoh: produk granola untuk remaja, warna hijau-krem, font sans serif tebal, ilustrasi oat dan buah, tata letak sederhana.')}
+function saveReflection(){let ids=['r1','r2','r3','r4','rNote'];let missing=ids.filter(x=>!val(x));let f=document.getElementById('reflectFeedback');if(missing.length){f.textContent='Lengkapi seluruh pertanyaan refleksi terlebih dahulu.';f.className='feedback bad';return}complete(4);f.textContent='Mantap! Kamu telah menyelesaikan tiga langkah belajar.';f.className='feedback good';say('Mantap! Kamu telah menyelesaikan tiga langkah belajar.');setTimeout(()=>go('report'),700)}
+function renderReport(){document.getElementById('repName').textContent=student.name||'-';document.getElementById('repClass').textContent=student.cls||'-';document.getElementById('repGroup').textContent=student.group||'-';document.getElementById('repDate').textContent=new Date().toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'});document.getElementById('repProgress').textContent=done.filter(Boolean).length+' dari 5 aktivitas';document.getElementById('repAnalysis').textContent=val('aProduct')?val('aProduct')+' — '+(val('aPlus')||'Analisis diisi'):'Belum diisi';document.getElementById('repDesign').textContent=val('dProduct')?val('dProduct')+' — '+(val('dMessage')||'Konsep desain diisi'):'Belum diisi';document.getElementById('repReflection').textContent=val('rNote')?'Sudah ditulis':'Belum diisi';let links=[];if(val('canvaLink'))links.push('Canva: '+val('canvaLink'));if(val('pacdoraLink'))links.push('Pacdora: '+val('pacdoraLink'));document.getElementById('repWork').textContent=links.join(' | ')||val('designNote')||'Tautan karya belum ditambahkan.';document.getElementById('reportStatus').textContent=done.every(Boolean)?'Tuntas':'Dalam proses'}
+function restart(){if(confirm('Yakin ingin mengulang dari awal? Progres aktivitas akan direset.')){done=[false,false,false,false,false];student={name:'',cls:'',group:''};document.querySelectorAll('input,textarea,select').forEach(e=>{if(e.type==='radio')e.checked=false;else e.value=''});document.getElementById('toReflect').disabled=true;updateProgress();go('home');toast('Progres berhasil direset pada sesi ini.')}}
+function say(t){if(!sound)return;try{let u=new SpeechSynthesisUtterance(t);u.lang='id-ID';speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
+function toggleSound(){sound=!sound;document.getElementById('soundBtn').textContent=sound?'🔊 Suara: Aktif':'🔊 Suara: Mati';if(sound)say('Suara narator aktif. Selamat belajar di LabelKu.')}
+updateProgress();
+</script>
+</body></html>
